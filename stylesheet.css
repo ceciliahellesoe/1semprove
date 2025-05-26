@@ -1,0 +1,32 @@
+/* Stil til CO2-cirklen – simulering med grænser */
+.co2-circle {
+    width: 180px;
+    height: 180px;
+    border: 12px solid #d6e8c2; /* lys grøn kant */
+    border-top: 12px solid #8dbb6c; /* mørkere grøn for "progress-effekt" */
+    border-radius: 50%; /* gør den rund */
+    padding-top: 45px;
+}
+
+/* Baggrund til forslag-boks */
+.suggestion-box {
+    background-color: #e9f0e5; /* meget lys grøn */
+}
+
+/* Responsivitet: tablet og op */
+@media (min-width: 768px) {
+    .co2-circle {
+        width: 220px;
+        height: 220px;
+        border-width: 16px;
+        padding-top: 60px;
+    }
+
+    .suggestion-box {
+        font-size: 1.1rem;
+    }
+
+    .btn {
+        font-size: 1.1rem;
+    }
+}
