@@ -1,0 +1,42 @@
+/* Hele sidens baggrundsfarve */
+body {
+    background-color: #f5f1ec;/* Baggrundsfarve til header */
+
+
+    /* Brugerikon hjørne stil */
+    .user-icon {
+        background-color: #3f5d3b; /* mørk grøn farve */
+        color: white;
+        border-radius: 50%;
+        width: 48px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto; /* centrerer i kolonnen */
+        font-size: 24px;
+    }
+
+
+    /* Teksten "Impactly" */
+    .logo-text {
+        font-size: 1.2rem;
+        vertical-align: middle;
+    }
+
+    /* Alt dette gælder for mobil */
+    .upload-btn {
+        font-size: 1.2rem;
+    }
+
+
+    /* tilpasser skærmstørrelse */
+    @media (min-width: 768px) {
+        .upload-btn {
+            font-size: 1.4rem;
+        }
+    }
+
+    .logo-text {
+        font-size: 1.5rem;
+    }

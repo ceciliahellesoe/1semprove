@@ -1,17 +1,69 @@
-/* Stil til CO2-cirklen – simulering med grænser */
+/* Hele sidens baggrundsfarve */
+body {
+    background-color: #f5f1ec;/* Baggrundsfarve til header */
+
+
+    /* Brugerikon stil */
+    .user-icon {
+        background-color: #3f5d3b; /* mørk grøn farve */
+        color: white;
+        border-radius: 50%;
+        width: 48px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto; /* centrerer i kolonnen */
+        font-size: 24px;
+    }
+
+
+    /* Teksten "Impactly" */
+    .logo-text {
+        font-size: 1.2rem;
+        vertical-align: middle;
+    }
+
+
+
+    /* Stil til CO2-cirklen – simulering med grænser */
 .co2-circle {
-    width: 180px;
-    height: 180px;
+    width: 230px;
+    height: 230px;
     border: 12px solid #d6e8c2; /* lys grøn kant */
     border-top: 12px solid #8dbb6c; /* mørkere grøn for "progress-effekt" */
     border-radius: 50%; /* gør den rund */
     padding-top: 45px;
 }
 
+
+
 /* Baggrund til forslag-boks */
 .suggestion-box {
-    background-color: #e9f0e5; /* meget lys grøn */
+    background-color: #cfe3b4; /* lys grøn */
 }
+
+        /* Upload-knap */
+        .upload-btn {
+            background-color: #3f5d3b;
+            color: white;
+            font-size: 1.2rem;
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+
+            /* Alt dette gælder for mobil */
+            .upload-btn {
+                font-size: 1.2rem;
+            }
+
+            /* Større skærme */
+            @media (min-width: 768px) {
+                .upload-btn {
+                    font-size: 1.4rem;
+                }
+            }
+
 
 /* Responsivitet: tablet og op */
 @media (min-width: 768px) {

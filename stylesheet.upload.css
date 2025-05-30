@@ -1,0 +1,103 @@
+/* Hele sidens baggrundsfarve */
+body {
+    background-color: #f5f1ec;/* Baggrundsfarve til header */
+
+
+    /* Brugerikon hjørne stil */
+    .user-icon {
+        background-color: #3f5d3b; /* mørk grøn farve */
+        color: white;
+        border-radius: 50%;
+        width: 48px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto; /* centrerer i kolonnen */
+        font-size: 24px;
+    }
+
+
+    /* Teksten "Impactly" */
+    .logo-text {
+        font-size: 1.2rem;
+        vertical-align: middle;
+    }
+
+    /* Alt dette gælder for mobil */
+    .upload-btn {
+        font-size: 1.2rem;
+    }
+
+
+    /* tilpasser skærmstørrelse */
+    @media (min-width: 768px) {
+        .upload-btn {
+            font-size: 1.4rem;
+        }
+    }
+
+        .logo-text {
+            font-size: 1.5rem;
+        }
+
+/*styling til resten af sidens indehold */
+
+
+        /* Kamera-boksen */
+        .camera-box {
+            background-color: #3f5d3b; /* Mørkegrøn */
+            border-radius: 20px;
+            padding: 40px 0;
+        }
+
+        /* Kameraikon */
+        .camera-icon {
+            font-size: 64px;
+            color: #f5f1ec; /* Lys beige */
+        }
+
+        /* Ikon-knapper */
+        .icon-btn {
+            background-color: #cfe3b4; /* Lysegrøn */
+            border-radius: 10px;
+            padding: 10px;
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+
+        /* Tekstboks */
+        .description-box {
+            background-color: #cfe3b4;
+            border: none;
+            border-radius: 12px;
+            resize: none;
+            padding: 15px;
+        }
+
+        /* Upload-knap */
+        .upload-btn {
+            background-color: #3f5d3b;
+            color: white;
+            font-size: 1.2rem;
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Gør det lidt større på tablets og desktop */
+        @media (min-width: 768px) {
+            .camera-icon {
+                font-size: 80px;
+            }
+
+            .icon-btn {
+                font-size: 28px;
+                padding: 15px;
+            }
+
+            .upload-btn {
+                font-size: 1.4rem;
+            }
+        }
+

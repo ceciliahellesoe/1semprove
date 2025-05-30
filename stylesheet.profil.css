@@ -1,0 +1,121 @@
+/* Hele sidens baggrundsfarve */
+body {
+  background-color: #f5f1ec;/* Baggrundsfarve til header */
+
+
+/* Brugerikon stil */
+.user-icon {
+    background-color: #3f5d3b; /* mørk grøn farve */
+    color: white;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto; /* centrerer i kolonnen */
+    font-size: 24px;
+}
+
+
+/* Teksten "Impactly" */
+.logo-text {
+    font-size: 1.2rem;
+    vertical-align: middle;
+}
+
+/* Responsiv tilpasning til større skærme */
+@media (min-width: 768px) {
+    .user-icon {
+        width: 56px;
+        height: 56px;
+        font-size: 28px;
+    }
+
+    .logo-text {
+        font-size: 1.5rem;
+    }
+
+    .icon-leaf {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+
+
+/* Hele sidens baggrund */
+body {
+  background-color: #f5f1ec;
+  font-family: sans-serif;
+}
+
+/* Profilikon styling */
+.profile-icon {
+  background-color: #3f5d3b; /* Mørkegrøn */
+  color: white;
+  width: 100px;
+  height: 100px;
+  font-size: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+/* Boksen med mønter og CO2 */
+.info-box {
+  background-color: #cfe3b4; /* Lysegrøn */
+}
+
+/* Medlemsinfo-boks */
+.info-card {
+  background-color: #cfe3b4; /* Samme lysegrøn som ovenfor */
+}
+
+/* Gør teksten lidt mindre på store skærme */
+@media (min-width: 768px) {
+  .info-box, .info-card {
+    font-size: 1.1rem;
+  }
+
+  .profile-icon {
+    width: 120px;
+    height: 120px;
+    font-size: 60px;
+  }
+}
+
+
+/* Footer baggrund og layout */
+.footer {
+  background-color: #3f5d3b; /* mørkegrøn */
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding-bottom: 1.5rem;
+}
+
+/* Fælles ikon-stil */
+.footer-icon {
+  color: #f5f1ec; /* samme farve som baggrund på siden */
+  font-size: 24px;
+}
+
+/* Fremhæv midterikon med cirkel */
+.footer-icon-circle {
+  border: 2px solid #f5f1ec;
+  border-radius: 50%;
+  padding: 10px;
+  display: inline-block;
+}
+
+/* Justering for større skærme */
+@media (min-width: 768px) {
+  .footer-icon {
+    font-size: 28px;
+  }
+
+  .footer-icon-circle {
+    padding: 12px;
+  }
+}
