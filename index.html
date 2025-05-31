@@ -15,10 +15,15 @@
 
 <!-- Container til hele appens indhold -->
 <div class="container-fluid p-3">
+    <!--container holder på indeholdet - fluid gør at den fylder hele bredden - p-3 betyder den padding indvendigt, så den ikke rør kanten-->
 
-    <!-- Container for header -->
+    <!--Container for header -->
+
     <div class="container-fluid py-3 header-bg">
         <div class="row align-items-center">
+
+            <!-- py-3 giver lodret afstand (pading top og bund). header-bg er en class som brugt i css.
+              Align-items-center = alt lodret og i centrum-->
 
             <!-- Ikon til venstre -->
             <div class="col-2 text-center">
@@ -27,10 +32,16 @@
                 </div>
             </div>
 
+            <!--col-2 =ikonet fylder 2 ud af 12 kolonner i rækken. center = bliver centreret i kolonnen
+            bi-bi person er ikon fra bootstrap-->
+
             <!-- Logo og navn til højre -->
             <div class="col-10 text-end pe-2">
                 <span class="fw-bold logo-text">Impactly</span>
             </div>
+
+            <!-- col-10 = fylder 10 ud af 12 kolonner. text- end gør at det er helt ude til højre pe-2 = padding 2.
+            bold logo giver gør teksten fed-->
 
             <!-- Bootstrap Icons CDN -->
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
@@ -39,18 +50,28 @@
 
             <!-- Velkomsttekst -->
     <div class="row text-center mb-5">
+        <!--row= starter en række i bootstrap. center = centrering. mb-5 = margin bootom som giver luft under-->
         <div class="col-12">
+            <!--col-12 = fylder 12 ud af 12 kolonner-->
             <h5>Hej Cecilia,</h5>
             <p class="fw-semibold">flot arbejde i denne uge!</p>
+            <!-- fw-semibold gør teksten semi-fed-->
         </div>
     </div>
 
+
+
     <!-- CO2 cirkel -->
     <div class="row justify-content-center mb-5">
+        <!-- row= starter bootstrap grid. justify content center = centrerer kolonnerne vandret i midten. mb-5 = margin gør mere plads-->
         <div class="col-8">
+            <!--col-8 fylder 8 ud af 12 kolonner-->
             <div class="co2-circle mx-auto text-center">
+                <!-- co2-circle = egen defineret class. mx-auto = centrerer boksen vandret. text center = centrerer teksten.-->
                 <p class="mb-1">Du har sparet</p>
+                <!--kort tekst uden for meget under. mb-1 giver luft.-->
                 <h3 class="fw-bold">10kg CO2</h3>
+                <!--fw-bold = gør teksten fed-->
                 <p>i denne uge!</p>
             </div>
         </div>
@@ -59,21 +80,32 @@
 
     <!-- Klimahandling forslag -->
     <div class="row justify-content-center mb-1">
+        <!-- starter bootstrap række og centrer kolonnen vandret. mb-1 = margin giver luft under kolonnen.-->
         <div class="col-12 suggestion-box p-3 rounded">
+            <!-- col-12 = fylder 12/12 kolonner. sugestion-box = egen class til css. p-3 = invendig padding. rounded = runder kanterne-->
             <p class="mb-2">Mangler du en klimahandling?</p>
+            <!-- mb-2 = giver luft nedad.-->
             <div class="d-flex justify-content-between align-items-center">
+                <!--d-flex =gør til en flexbox. Justify content between = placerer indehold lige til højre og venstre. align items center = centrerer så tekst og link står lige højt-->
                 <div>
                     🍏 Indkøb efter sæson
                     <span class="badge bg-light text-dark ms-2">2 mønter</span>
+                    <!--class=badge = bootstrap klasse til mønt ikon-->
                 </div>
                 <a href="html.feed.html" class="text-decoration-none">Tjek andres handlinger</a>
+                <!--linker til feed siden. text decoration non = fjerner understreg under linket.-->
             </div>
         </div>
     </div>
 
 
             <!-- Upload-knap -->
-            <button class="btn upload-btn w-100 fw-bold">Bekræft og upload!</button>
+            <a href="Upload.html" class="btn upload-btn w-100 fw-bold mt-5">Upload handling!</a>
+            <!-- knap der linker til upload siden. class=btn gør link til en bootstrap knap.
+            upload-btn er egen class til css.
+            w-100 gør at det fylder 100%/hele bredden
+            fw-bold gør teksten fed
+            mt-5 er margin der giver luft-->
 
 <!-- Fast bundmenu -->
 <nav class="navbar fixed-bottom bg-dark d-flex justify-content-around py-2">

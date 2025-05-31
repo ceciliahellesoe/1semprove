@@ -40,3 +40,53 @@ body {
     .logo-text {
         font-size: 1.5rem;
     }
+
+
+    /* Baggrund til forslag-boks */
+    .suggestion-box {
+        background-color: #cfe3b4; /* lys grøn */
+    }
+
+
+
+
+    /* Baggrundsfarve for hele siden */
+    body {
+        background-color: #f5f1ec;
+        font-family: sans-serif;
+    }
+
+    /* Grøn boks bag hver belønning */
+    .reward-box {
+        background-color: #cfe3b4;
+    }
+
+    /* Billeder i højre side */
+    .reward-img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 6px;
+    }
+
+    /* Knapdesign */
+    .redeem-btn {
+        background-color: #3f5d3b;
+        color: white;
+        font-weight: bold;
+        padding: 6px 16px;
+        border-radius: 8px;
+    }
+
+    /* Gør tekst lidt større på større skærme */
+    @media (min-width: 768px) {
+        .redeem-btn {
+            font-size: 1.1rem;
+        }
+
+        .reward-img {
+            max-height: 70px;
+        }
+    }
+
+
+
