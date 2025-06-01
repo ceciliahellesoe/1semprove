@@ -23,9 +23,12 @@
 <!-- Container til hele appens indhold -->
 <div class="container-fluid p-3">
 
-  <!-- Container for header -->
+  <!--Container for header -->
   <div class="container-fluid py-3 header-bg">
     <div class="row align-items-center">
+
+      <!-- py-3 giver lodret afstand (pading top og bund). header-bg er en class som brugt i css.
+        Align-items-center = alt lodret og i centrum-->
 
       <!-- Ikon til venstre -->
       <div class="col-2 text-center">
@@ -34,13 +37,24 @@
         </div>
       </div>
 
+      <!--col-2 =ikonet fylder 2 ud af 12 kolonner i rækken. center = bliver centreret i kolonnen
+      bi-bi person er ikon fra bootstrap-->
+
+
       <!-- Logo og navn til højre -->
+
       <div class="col-10 text-end pe-2">
-        <span class="fw-bold logo-text">Impactly</span>
+        <!-- Linket ser ud som normal tekst og er ikke blåt -->
+        <a href="index.html" class="fw-bold logo-text text-dark text-decoration-none">Impactly</a>
       </div>
 
+      <!-- col-10 = fylder 10 ud af 12 kolonner. text- end gør at det er helt ude til højre pe-2 = padding 2.
+      bold logo giver gør teksten fed-->
       <!-- Bootstrap Icons CDN -->
+
+
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
 
 
 

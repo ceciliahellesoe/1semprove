@@ -11,9 +11,13 @@
 </head>
 
 <body>
-<!-- Container for header -->
+
+<!--Container for header -->
 <div class="container-fluid py-3 header-bg">
   <div class="row align-items-center">
+
+    <!-- py-3 giver lodret afstand (pading top og bund). header-bg er en class som brugt i css.
+      Align-items-center = alt lodret og i centrum-->
 
     <!-- Ikon til venstre -->
     <div class="col-2 text-center">
@@ -22,48 +26,74 @@
       </div>
     </div>
 
+    <!--col-2 =ikonet fylder 2 ud af 12 kolonner i rækken. center = bliver centreret i kolonnen
+    bi-bi person er ikon fra bootstrap-->
+
+
     <!-- Logo og navn til højre -->
-    <div class="col-10 text-end pe-3">
-      <span class="fw-bold logo-text">Impactly</span>
+
+    <div class="col-10 text-end pe-2">
+      <!-- Linket ser ud som normal tekst og er ikke blåt -->
+      <a href="index.html" class="fw-bold logo-text text-dark text-decoration-none">Impactly</a>
     </div>
+
+    <!-- col-10 = fylder 10 ud af 12 kolonner. text- end gør at det er helt ude til højre pe-2 = padding 2.
+    bold logo giver gør teksten fed-->
 
 <!-- Bootstrap Icons CDN -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
 
+
+
 <!-- sidens indehold udover header og footer-->
 
     <div class="container text-center py-4">
+      <!-- container = en ramme fra bootstrap. text center = centrerer indehold horisontalt. py-4 = padding der giver luft-->
 
       <!-- Profilikon -->
       <div class="profile-icon mx-auto mb-2">
+        <!--profile icon = class til ikonet der kan styles css. mx auto = automatisk centreret vandret. mb-2 margin som giver luft under-->
         <i class="bi bi-person-fill"></i>
+        <!--bootstrap profilikon-->
       </div>
       <p>Skift profilbillede</p>
 
       <!-- Mønter og CO2 -->
       <div class="info-box d-flex justify-content-between align-items-center p-3 my-3 rounded">
+        <!-- info-box = en class til styling i css. d.flex = gør boksen til en flexbox.
+        justify-content-between = placerer indehold med afstand i mellem. align items = indehold er vertikalt centreret.
+        p-3 = padding luft i boksen. my-3 = margin top og bottom. rounded = afrundede hjørner-->
         <div>
           <i class="bi bi-coin fs-4"></i>
+          <!-- bibi coin er møntikonet. fs-4 = font size 4 (størrelse 4)-->
           <span>32 mønter</span>
         </div>
         <div class="vr mx-3"></div>
+        <!-- vr = en lodret streg bootstrap. mx-3 giver vandret luft på begge sider af stregen.-->
         <div class="text-end">
+          <!-- text end = alt tekst er til højre-->
           <div>Du har sparet:</div>
           <strong>52kg CO2</strong>
+          <!-- strong gør det fed-->
           <div>i alt!</div>
         </div>
       </div>
 
       <!-- Medlemsinfo -->
       <div class="info-card p-3 rounded">
+        <!--info card = en klasse til styling. p-3 = padding luft i boks. rounded = giver runde hjørner.-->
         <p><strong>Medlem siden:</strong> 5. maj 2025</p>
+        <!--strong gør teksten fed-->
         <p>Brugernavn: CeciliaHellesøe</p>
         <p>Mail: Billhdk@gmail.com</p>
         <p>Adgangskode: ********</p>
         <p><a href="#">Glemt adgangskode?</a></p>
+        <!--link til glemt kode. linker ikke til noget, kun for looks-->
         <div class="text-end">
+          <!--text end højrejusterer-->
           <a href="#" class="text-dark fw-bold">Rediger oplysninger <i class="bi bi-arrow-right"></i></a>
+          <!-- linker til ingenting - kun looks. text dark = gør link mørkt. fw-bold gør link fed. bibi arrow bootstrap pil ikon-->
         </div>
       </div>
 

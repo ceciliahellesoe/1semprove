@@ -34,11 +34,13 @@ body {
 
     .logo-text {
         font-size: 1.5rem;
+
     }
 
+      /*grøn profil ring stor */
     .icon-leaf {
-        width: 28px;
-        height: 28px;
+        width: 10px;
+        height: 10px;
     }
 }
 
